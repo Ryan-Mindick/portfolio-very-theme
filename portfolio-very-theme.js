@@ -21,19 +21,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
 
   constructor() {
     super();
-    this.title = "";
-    this.t = this.t || {};
-    this.t = {
-      ...this.t,
-      title: "About",
-    };
-    this.registerLocalization({
-      context: this,
-      localesPath:
-        new URL("./locales/portfolio-very-theme.ar.json", import.meta.url).href +
-        "/../",
-      locales: ["ar", "es", "hi", "zh"],
-    });
+    this.title = "Portfolio";
   }
 
   // Lit reactive properties
@@ -68,7 +56,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   render() {
     return html`
 <div class="wrapper">
-  <h3><span>${this.t.title}:</span> ${this.title}</h3>
+  <h3><span></span> ${this.title}</h3>
   <slot></slot>
 </div>`;
   }
