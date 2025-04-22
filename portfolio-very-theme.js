@@ -21,14 +21,18 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
 
   constructor() {
     super();
-    this.title = "Portfolio";
+    this.title = {
+      ...this.t,
+      portfoliovery: "Portfolio"
+    }
   }
 
   // Lit reactive properties
   static get properties() {
     return {
       ...super.properties,
-      title: { type: String },
+      screen: { type: Number, reflect: true },
+      screens: { type: Array },
     };
   }
 
