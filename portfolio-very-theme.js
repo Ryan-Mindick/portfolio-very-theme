@@ -23,7 +23,6 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
     super();
     this.title = {
       ...this.t,
-      portfoliovery: "Portfolio"
     }
   }
 
