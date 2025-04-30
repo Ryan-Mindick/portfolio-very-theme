@@ -58,8 +58,9 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   // Lit render the HTML
   render() {
     return html`
-<div class="wrapper">
-  <h3><span></span> ${this.title}</h3>
+      <div class="wrapper">
+        <h3>${this.title}</h3>
+      <span></span>
   <slot></slot>
 </div>`;
   }
