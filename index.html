@@ -1,83 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="Description" content="Demonstration for portfolio-very-theme" />
 
-<head>
-  <base href="/">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Demonstration for portfolio-very-theme">
-
-  <style>
-    :root,
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-    }
+    <style>
+      :root,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
       .about-css {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding: var(--ddd-spacing-4);
         max-width: 1200px;
         width: 100%;
-        margin-left: 20px;
-        font-size: var(--ddd-spacing-4);
+        padding-top: 100px;
+        margin-left: 15px;
       }
 
       .resume-css {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding: var(--ddd-spacing-4);
         max-width: 1200px;
         width: 100%;
-        margin-left: 20px;
-        font-size: var(--ddd-spacing-4);
+        padding-top: 100px;
+        margin-left: 15px;
       }
 
       .project-css {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding: var(--ddd-spacing-4);
         max-width: 1200px;
         width: 100%;
-        margin-left: 20px;
-        font-size: var(--ddd-spacing-4);
+        padding-top: 100px;
+        margin-left: 15px;
       }
+      
 
       .work-css {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding: var(--ddd-spacing-4);
         max-width: 1200px;
         width: 100%;
-        margin-left: 20px;
-        font-size: var(--ddd-spacing-4);
+        padding-top: 100px;
+        margin-left: 15px;
       }
-
+      
       .contact-css {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding: var(--ddd-spacing-4);
         max-width: 1200px;
         width: 100%;
-        margin-left: 20px;
-        font-size: var(--ddd-spacing-4);
+        padding-top: 100px;
+        margin-left: 15px;
       }
 
-  </style>
+      @media (max-width: 768px) {
+        .about-css,
+        .resume-css,
+        .about-css,
+        .work-css,
+        .contact-css {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 425px) {
+        .about-css,
+        .resume-css,
+        .about-css,
+        .work-css,
+        .contact-css {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 375px) {
+        .about-css,
+        .resume-css,
+        .about-css,
+        .work-css,
+        .contact-css {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 320px) {
+        .about-css,
+        .resume-css,
+        .about-css,
+        .work-css,
+        .contact-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+ 
   <title>portfolio-very-theme</title>
 </head>
 
 <body>
   <div id="demo">
     <h1>portfolio-very-theme</h1>
-    <portfolio-very-screen class="resume" title="About" sid="1">
+    <portfolio-very-screen class="about" title="About" sid="1">
       <div class="about-css">
         <p>My name is Ryan Mindick, I am a junior Cybersecurity student at Penn State University. 
           I am excited to apply what I have learned in my classes to real world applications.
@@ -108,7 +157,14 @@
 
     <portfolio-very-screen class="work" title="Work" sid="4">
       <div class="work-css">
-        <p>My prior work experience is working up from being a </p>
+        <p>My prior work experience is:</p>
+        <ul>
+          <li>
+            Hatfield Aquatic Center: Where I worked up from being a first-year Grounds Crew employee to becoming a sixth-year Operations Manager.
+            Throughout this time, I learned many valuable skills about hard work while moving up and gaining promotions as well as when I achieved these
+            promotions how to be an effective team leader.
+          </li>
+        </ul>
       </div>
     </portfolio-very-screen>
 

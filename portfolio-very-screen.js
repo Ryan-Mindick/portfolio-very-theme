@@ -79,33 +79,16 @@ export class PortfolioVeryScreen extends DDDSuper(LitElement) {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-          gap: var(--ddd-spacing-4);
         }
 
-        .contact-info {
-          font-size: var(--ddd-spacing-3);
-          line-height: 1.8;
-          text-align: left;
-        }
-
-        .contact-pic {
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          border: 4px solid var(--ddd-theme-primary);
-          object-fit: cover;
-        }
-        h3 {
-          padding: 0px 0px 0px;
-        }
-        @media (max-width: 742px) {
+        @media (max-width: 1000px) {
           .wrapper {
             width: 100vw;
             height: auto;
             display: flex;
             flex-direction: column-reverse;
           }
-        }
+        }        
       `,
     ];
   }
