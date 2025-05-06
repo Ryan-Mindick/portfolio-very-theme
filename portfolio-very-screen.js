@@ -53,23 +53,23 @@ export class PortfolioVeryScreen extends DDDSuper(LitElement) {
         h3 span {
           font-size: var(--final-test-label-font-size, var(--ddd-font-size-s));
         }
-        :host(.About) {
+        :host(.about) {
           background-color: var(--ddd-theme-default-beaverBlue);
           color: var(--ddd-theme-default-slateMaxLight);
         }
-        :host(.Resume) {
+        :host(.resume) {
           background-color: var(--ddd-theme-default-nittanyNavy);
           color: var(--ddd-theme-default-slateMaxLight);
         }
-        :host(.Projects) {
+        :host(.projects) {
           background-color: var(--ddd-theme-default-pughBlue);
           color: var(--ddd-theme-default-slateMaxLight);
         }
-        :host(.Work) {
+        :host(.work) {
           background-color: var(--ddd-theme-default-slateGray);
           color: var(--ddd-theme-default-slateMaxLight);
         }
-        :host(.Contact) {
+        :host(.contact) {
           background-color: var(--ddd-theme-default-skyBlue);
           color: var(--ddd-theme-default-slateMaxLight);
         }

@@ -8,11 +8,68 @@
   <meta name="Description" content="Demonstration for portfolio-very-theme">
 
   <style>
-    portfolio-very-theme {
-      margin: var(--ddd-spacing-2);
-      border: var(--ddd-border-md);
-      border-radius: var(--ddd-radius-lg);
+    :root,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
     }
+
+      .about-css {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ddd-spacing-4);
+        max-width: 1200px;
+        width: 100%;
+        margin-left: 20px;
+        font-size: var(--ddd-spacing-4);
+      }
+
+      .resume-css {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ddd-spacing-4);
+        max-width: 1200px;
+        width: 100%;
+        margin-left: 20px;
+        font-size: var(--ddd-spacing-4);
+      }
+
+      .project-css {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ddd-spacing-4);
+        max-width: 1200px;
+        width: 100%;
+        margin-left: 20px;
+        font-size: var(--ddd-spacing-4);
+      }
+
+      .work-css {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ddd-spacing-4);
+        max-width: 1200px;
+        width: 100%;
+        margin-left: 20px;
+        font-size: var(--ddd-spacing-4);
+      }
+
+      .contact-css {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ddd-spacing-4);
+        max-width: 1200px;
+        width: 100%;
+        margin-left: 20px;
+        font-size: var(--ddd-spacing-4);
+      }
+
   </style>
   <title>portfolio-very-theme</title>
 </head>
@@ -20,41 +77,49 @@
 <body>
   <div id="demo">
     <h1>portfolio-very-theme</h1>
-    <portfolio-very-theme>
-      <portfolio-screen title="About" sid="1">
+    <portfolio-very-screen class="resume" title="About" sid="1">
+      <div class="about-css">
         <p>My name is Ryan Mindick, I am a junior Cybersecurity student at Penn State University. 
           I am excited to apply what I have learned in my classes to real world applications.
           I am looking for opportunities within the greater Philadelphia area!
         </p>
-      </portfolio-screen>
-    </portfolio-very-theme>
+      </div>
+    </portfolio-very-screen>
 
-    <portfolio-very-theme>
-      <portfolio-screen title="Resume" sid="2">
-        <p>Below is my resume, I started working when I was 14 and have always been motivated to work hard. 
-        I worked at the Hatfield Aquatic Center for 6 years and rose from being a first-year Grounds Crew employee to being a Operations supervisor.
-        This growth over the years shows how I stay consistent and loyal to who I work for and how hard of a worker I am. </p>
-      </portfolio-screen>
-    </portfolio-very-theme>
+    <portfolio-very-screen class="resume" title="Resume" sid="2">
+      <div class="resume-css">
+        <p>Pictured below is my resume. I have a strong understanding of web development using skills such as; Python, CSS, JavaScript, HTML, and MySQL
+        </p>
+      </div>
+    </portfolio-very-screen>
 
-    <portfolio-very-theme>
-      <portfolio-screen title="Projects" sid="3">
+    <portfolio-very-screen class="projects" title="Projects" sid="3">
+      <div class="project-css">
+        <p>Listed here are projects that I have worked on in the past:</p>
+        <ul>
+          <li>
+            <a href="https://vercel.com/ryan-mindicks-projects/ddd-steps-list/2GJaLcnc2K74yLnDKjrmg9ih4gAg" title="DDD-Steps-List">
+              DDD-Steps-List
+            </a>
+          </li>
+        </ul>
+      </div>
+    </portfolio-very-screen>
+
+    <portfolio-very-screen class="work" title="Work" sid="4">
+      <div class="work-css">
+        <p>My prior work experience is working up from being a </p>
+      </div>
+    </portfolio-very-screen>
+
+    <portfolio-very-screen class="contact" title="Contact" sid="5">
+      <div class="contact-css">
         <p>A bunch of content here</p>
-      </portfolio-screen>
-    </portfolio-very-theme>
+      </div>
+    </portfolio-very-screen>
 
-    <portfolio-very-theme>
-      <portfolio-screen title="Work" sid="4">
-        <p>A bunch of content here</p>
-      </portfolio-screen>
-    </portfolio-very-theme>
-
-    <portfolio-very-theme>
-      <portfolio-screen title="Contact" sid="5">
-        <p>A bunch of content here</p>
-      </portfolio-screen>
-    </portfolio-very-theme>
   </div>
+
   <script type="module" src="./portfolio-very-theme.js"></script>
   <script type="module" src="/portfolio-screen.js"></script>
   <script type="module" src="/portfolio-very-scroll.js"></script>
