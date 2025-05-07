@@ -7,8 +7,7 @@ import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 import "@haxtheweb/scroll-button/scroll-button.js";
 import "/portfolio-very-screen.js";
-import "/portfolio-very-header.js";
-import "/portfolio-very-project-card.js";
+
 
 /**
  * `portfolio-very-theme`
@@ -24,9 +23,29 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
 
   constructor() {
     super();
-    this.pages = []
-    this.title = {
-      ...this.t,
+    this.pages = [];
+    this.addEventListener("screen-change", (e) => {
+      let tmp = this.screen + parseInt(e.detail.direction);
+      if (tmp < 0) {
+        tmp = 0;
+      } else if (tmp > this.screens.length - 1) {
+        tmp = this.screens.length - 1;
+      }
+      this.screen = tmp;
+    });
+    
+    this.addEventListener("screen-ready", (e) => {
+      this.screens = [...this.screens, e.detail.screen];
+    });
+    
+    firstUpdated(changedProperties) {
+      if (super.firstUpdated) {
+        super.firstUpdated(changedProperties);
+      }
+      const hash = globalThis.location.hash;
+      if (hash && parseInt(hash.replace("#", "")) >= 0) {
+        this.screen = parseInt(hash.replace("#", ""));
+      }
     }
   }
 

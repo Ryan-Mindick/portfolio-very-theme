@@ -36,6 +36,20 @@ export class PortfolioVeryScreen extends DDDSuper(LitElement) {
     return [
       super.styles,
       css`
+        :root {
+        --ddd-theme-default-beaverBlue: #1e407c;
+        --ddd-theme-default-nittanyNavy: #001e44;
+        --ddd-theme-default-pughBlue: #3366cc;
+        --ddd-theme-default-slateGray: #708090;
+        --ddd-theme-default-skyBlue: #87ceeb;
+        --ddd-theme-default-slateMaxLight: #f0f0f0;
+        --ddd-theme-accent: #3366cc;
+        --ddd-theme-primary: #ffffff;
+        --ddd-spacing-2: 8px;
+        --ddd-spacing-4: 16px;
+        --ddd-spacing-5: 24px;
+        --ddd-font-navigation: sans-serif;
+        }
         :host {
           display: block;
           height: 100vh;
