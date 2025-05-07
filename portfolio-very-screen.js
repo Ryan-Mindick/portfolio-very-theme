@@ -81,7 +81,7 @@ export class PortfolioVeryScreen extends DDDSuper(LitElement) {
           flex-wrap: wrap;
         }
 
-        @media (max-width: 1000px) {
+        @media (max-width: 742px) {
           .wrapper {
             width: 100vw;
             height: auto;
