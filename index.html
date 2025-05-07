@@ -83,7 +83,17 @@
         margin-left: 15px;
       }
 
+      .headshot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 325px;
+        height: 300px;
+        border-radius: 50%;
+      }
+
       @media (max-width: 768px) {
+        .headshot,
         .about-css,
         .resume-css,
         .about-css,
@@ -94,6 +104,7 @@
         }
       }
       @media (max-width: 425px) {
+        .headshot,
         .about-css,
         .resume-css,
         .about-css,
@@ -104,6 +115,7 @@
         }
       }
       @media (max-width: 375px) {
+        .headshot,
         .about-css,
         .resume-css,
         .about-css,
@@ -114,6 +126,7 @@
         }
       }
       @media (max-width: 320px) {
+        .headshot,
         .about-css,
         .resume-css,
         .about-css,
@@ -133,6 +146,7 @@
     <h1>portfolio-very-theme</h1>
     <portfolio-very-screen class="about" title="About" sid="1">
       <div class="about-css">
+        <img src="Headshot.png" alt="Ryan Mindick's Headshot" class="headshot">
         <p>My name is Ryan Mindick, I am a junior Cybersecurity student at Penn State University. 
           I am excited to apply what I have learned in my classes to real world applications.
           I am looking for opportunities within the greater Philadelphia area!
@@ -142,23 +156,15 @@
 
     <portfolio-very-screen class="resume" title="Resume" sid="2">
       <div class="resume-css">
-        <p>Pictured below is my resume. I have a strong understanding of web development using skills such as:</p>
+        <p>Pictured below is my resume.</p>
+        <embed src="Ryan Mindick Resume.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>I have a strong understanding of web development using skills such as:</p>
         <ul>
-          <li>
-            Python
-          </li>
-          <li>
-            CSS
-          </li>
-          <li> 
-            HTML
-          </li>
-          <li>
-            JavaScript
-          </li>
-          <li>
-            MySQL
-          </li>
+          <li>Python</li>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>JavaScript</li>  
+          <li>MySQL</li>   
         </ul>
       </div>
     </portfolio-very-screen>
